@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIP Gallery | Sweet Cola Spa</title>
+    
+    <link rel="icon" type="image/png" href="Logo.png?v=3">
+    <link rel="apple-touch-icon" href="Logo.png?v=3">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         :root { --gold: #d4a017; --black: #0a0a0a; }
         body { background: #000; color: #fff; font-family: 'Inter', sans-serif; margin: 0; overflow-x: hidden; }
@@ -99,11 +104,10 @@
     </div>
 
     <div class="gallery-container">
-        
-<video width="100%" controls autoplay muted loop style="border-radius: 10px; border: 1px solid var(--gold);">
-  <source src="spa-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+        <video width="100%" controls autoplay muted loop style="border-radius: 10px; border: 1px solid var(--gold);">
+          <source src="spa-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         
         <img src="Promotion_1.jpg" class="gallery-item">
         <img src="Promotion_2.jpg" class="gallery-item">
@@ -116,7 +120,7 @@
     <script>
         function checkCode() {
             const codeInput = document.getElementById('accessCode').value;
-            // DITO MO I-SET ANG PASSWORD MO (HALIMBAWA: COLA2024)
+            // PASSWORD MO: COLA@10
             const correctCode = "COLA@10"; 
 
             if(codeInput === correctCode) {
