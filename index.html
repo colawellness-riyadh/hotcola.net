@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Cola Massage In Riyadh | Professional Wellness Center</title>
 
-    <meta property="og:title" content="Sweet Cola Massage In Riyadh">
-    <meta property="og:description" content="Premier professional wellness and therapeutic center in Al Yarmouk, Riyadh.">
-    <meta property="og:image" content="https://hotcola.net/Logo.png">
-    <meta property="og:url" content="https://hotcola.net">
-
     <script type='text/javascript'>
     (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
     {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
@@ -36,14 +31,16 @@
         :root {
             --gold: #d4a017;
             --gold-bright: #f2b600;
+            --white-text: #ffffff;
+            --dark-bg: #000000;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #000;
-            color: #fff;
+            background-color: var(--dark-bg);
+            color: var(--white-text);
             overflow-x: hidden;
         }
 
@@ -54,30 +51,31 @@
             min-width: 100%; min-height: 100%;
             z-index: -1;
             object-fit: cover;
-            filter: brightness(0.4);
+            filter: brightness(0.35); /* Mas madilim para sa dark mode vibe */
         }
 
         .content-wrapper {
             position: relative;
             z-index: 1;
-            padding: 120px 5% 50px 5%;
+            padding: 140px 5% 50px 5%;
             text-align: center;
         }
 
         .navbar {
             position: fixed;
             top: 0; left: 0; width: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            border-bottom: 2px solid var(--gold);
+            background: rgba(0, 0, 0, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding: 15px;
             z-index: 100;
         }
 
         .logo-main {
-            width: 140px;
+            width: 130px;
             border-radius: 50%;
             border: 2px solid var(--gold);
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 20px rgba(212, 160, 23, 0.3);
         }
 
         .services-container {
@@ -89,108 +87,120 @@
         }
 
         .card {
-            background: rgba(15, 15, 15, 0.9);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(212, 160, 23, 0.2);
+            background: rgba(20, 20, 20, 0.85);
+            padding: 40px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
             text-decoration: none;
             color: #fff;
-            transition: 0.4s;
+            transition: 0.3s ease;
         }
 
-        .card i { font-size: 30px; color: var(--gold); margin-bottom: 15px; }
-        .card h3 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 10px; }
+        .card:hover {
+            border-color: var(--gold);
+            background: rgba(30, 30, 30, 0.95);
+            transform: translateY(-5px);
+        }
+
+        .card i { font-size: 32px; color: var(--gold); margin-bottom: 15px; }
+        .card h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 10px; color: var(--white-text); }
+        .card p { font-size: 14px; color: #aaa; }
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, #d4a017, #f2b600);
+            background: var(--white-text); /* White button para sa dark mode contrast */
             color: #000;
-            padding: 15px 40px;
+            padding: 18px 60px;
             text-decoration: none;
             font-weight: 900;
-            border-radius: 50px;
-            margin: 20px 0;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            border-radius: 4px;
+            margin: 30px 0;
+            letter-spacing: 1px;
+            transition: 0.3s;
         }
 
-        /* LOCATION SECTION - REQUIRED BY GOOGLE ADS */
-        .map-section {
-            max-width: 1200px;
-            margin: 60px auto 0 auto;
-            text-align: center;
-            padding: 40px 20px;
-            background: rgba(10, 10, 10, 0.8);
-            border-radius: 25px;
-            border: 1px solid #222;
+        .cta-button:hover {
+            background: var(--gold);
+            transform: scale(1.02);
         }
 
-        .map-container {
+        /* DARK MODE MAP STYLING */
+        .location-section {
+            margin-top: 80px;
+            padding: 60px 5%;
+            background: rgba(10, 10, 10, 0.9);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .map-wrapper {
             width: 100%;
             height: 450px;
-            border-radius: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
             overflow: hidden;
-            border: 2px solid var(--gold);
-            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            /* ETO ANG TRICK PARA MAG-BLACK ANG MAPA */
+            filter: grayscale(1) invert(90%) contrast(100%);
         }
 
         .footer {
-            margin-top: 60px;
+            margin-top: 80px;
             padding-bottom: 40px;
-            font-size: 13px;
-            color: #888;
+            font-size: 12px;
+            color: #555;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
     <video autoplay muted loop playsinline id="video-bg">
-        <source src="vecteezy_stunning-golden-glitter-particle-streams-flow-dynamically_69209508.mp4" type="video/mp4">
+        <source src="vecteezy_high-resolution-gold-glow-with-black-background_69016177.mp4" type="video/mp4">
     </video>
 
     <div class="navbar">
-        <h2 style="font-family:'Playfair Display'; color:var(--gold-bright); font-size:20px;">SWEET COLA MASSAGE</h2>
+        <h2 style="font-family:'Playfair Display'; color:var(--white-text); font-size:18px; letter-spacing:2px;">SWEET COLA</h2>
     </div>
 
     <div class="content-wrapper">
         <img src="Logo.png" alt="Sweet Cola Logo" class="logo-main">
         
-        <h1 style="font-family:'Playfair Display'; font-size: 28px;">Premium Wellness & Therapy</h1>
-        <p style="color:#ccc;">Certified Therapeutic Services In Al Yarmouk, Riyadh</p>
+        <h1 style="font-family:'Playfair Display'; font-size: 36px; margin-bottom: 10px; letter-spacing: 1px;">Luxury Wellness & Therapy</h1>
+        <p style="color:#888; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Al Yarmouk District • Riyadh</p>
 
         <div class="services-container">
             <a href="details.html?service=thai" class="card">
-                <i class="fas fa-leaf"></i>
+                <i class="fas fa-feather"></i>
                 <h3>Thai Therapy</h3>
-                <p>Traditional muscle recovery techniques.</p>
+                <p>Advanced muscle recovery and traditional stretching.</p>
             </a>
             <a href="details.html?service=swedish" class="card">
-                <i class="fas fa-spa"></i>
+                <i class="fas fa-wind"></i>
                 <h3>Swedish Massage</h3>
-                <p>Relaxing strokes for stress relief.</p>
+                <p>Stress relief and deep relaxation for body and mind.</p>
             </a>
             <a href="details.html?service=moroccan" class="card">
                 <i class="fas fa-water"></i>
                 <h3>Moroccan Bath</h3>
-                <p>Deep skin rejuvenation and cleansing.</p>
+                <p>Pure organic skin rejuvenation and traditional cleansing.</p>
             </a>
         </div>
 
-        <a href="https://wa.me/966560958973" class="cta-button">BOOK APPOINTMENT</a>
+        <a href="https://wa.me/966560958973" class="cta-button">BOOK NOW</a>
 
-        <div style="margin-top: 50px; padding: 30px; background: rgba(255,255,255,0.05); border-radius: 20px; border: 1px solid var(--gold);">
-    <h2 style="font-family:'Playfair Display'; color:var(--gold-bright); margin-bottom: 15px;">VISIT OUR SPA</h2>
-    <p style="color: #ccc; margin-bottom: 20px;">Prince Bandar Bin Abdulaziz St, Al Yarmouk, Riyadh</p>
-    <div style="width: 100%; height: 300px; border-radius: 15px; overflow: hidden;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.582845624!2d46.7900!3d24.8100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ4JzM2LjAiTiA0NsKwNDcnMjQuMCJF!5e0!3m2!1sen!2ssa!4v1715500000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</div>
+        <section class="location-section">
+            <h2 style="font-family:'Playfair Display'; font-size: 24px;">VISIT OUR SPA</h2>
+            <p style="color: #666; margin-top: 10px;">Prince Bandar Bin Abdulaziz St, Al Yarmouk, Riyadh, Saudi Arabia</p>
+            <div class="map-wrapper">
+                <iframe src="https://maps.google.com/?cid=11906971108550650032&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
 
         <div class="footer">
-            <p>© 2026 Sweet Cola Massage Riyadh. Licensed Professional Facility.</p>
-            <div style="margin-top: 15px;">
-                <a href="privacy-policy.html" style="color:var(--gold); text-decoration:none;">Privacy Policy</a> | 
-                <a href="return-policy.html" style="color:var(--gold); text-decoration:none;">Return Policy</a>
+            <p>© 2026 SWEET COLA MASSAGE. LICENSED THERAPEUTIC FACILITY.</p>
+            <div style="margin-top: 20px;">
+                <a href="privacy-policy.html" style="color:#888; text-decoration:none;">PRIVACY</a> | 
+                <a href="return-policy.html" style="color:#888; text-decoration:none;">REFUND</a>
             </div>
         </div>
     </div>
