@@ -32,16 +32,37 @@
 
         body { 
             font-family: 'Inter', sans-serif; 
-            background-image: url('Background_01.jpg');
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed; 
             background-color: #000; 
             color: #fff;
             padding: 40px 5%; 
             text-align: center; 
             min-height: 100vh;
             overflow-x: hidden;
+            position: relative;
+        }
+
+        /* DITO NAKALAGAY ANG VIDEO BACKGROUND CODE */
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2; /* Nasa pinakalikod ng lahat */
+            pointer-events: none;
+        }
+
+        /* Overlay para medyo madiliman ang video para litaw na litaw pa rin ang mga teksto */
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* 40% darkness shield */
+            z-index: -1;
+            pointer-events: none;
         }
 
         .header-title { 
@@ -61,10 +82,11 @@
             overflow: hidden;
             position: relative;
             z-index: 5;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.65); /* Ginawang mas madilim para lumutang sa dynamic background */
             border: 1px solid var(--gold);
             border-radius: 25px;
             padding: 30px 0;
+            backdrop-filter: blur(5px); /* Swabe tignan kapag dumadaan ang glitter sa likod */
         }
 
         .slider-track {
@@ -115,7 +137,6 @@
             overflow: hidden;
         }
 
-        /* DITO NATIN TINAKPAN AT GINAWANG GOLDEN-TONE ANG LALONG PINK NA IMAGES */
         .img-container {
             position: relative;
             width: 100%;
@@ -129,11 +150,9 @@
             height: 100%; 
             object-fit: cover; 
             display: block;
-            /* Binawasan ang contrast ng pink at sinalpakan ng sepia/gold tone filter */
             filter: brightness(0.6) sepia(0.8) hue-rotate(-15deg) saturate(1.4);
         }
 
-        /* Transparent Gold Overlay layer para patayin ang matingkad na pink */
         .img-container::after {
             content: '';
             position: absolute;
@@ -166,6 +185,7 @@
             align-items: center;
             overflow: hidden;
             transition: 0.3s;
+            backdrop-filter: blur(3px);
         }
 
         .service-card::before {
@@ -182,7 +202,7 @@
             content: '';
             position: absolute;
             inset: 3px;
-            background: #0a0a0a;
+            background: rgba(10, 10, 10, 0.85); /* Bahagyang transparent para aninag ang luxury background stream sa likod */
             border-radius: 22px;
             z-index: 1;
         }
@@ -224,6 +244,11 @@
     </style>
 </head>
 <body>
+
+    <video class="video-bg" autoplay loop muted playsinline>
+        <source src="vecteezy_stunning-golden-glitter-particle-streams-flow-dynamically_69209508.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
 
     <h1 class="header-title">Ready to schedule your session today? Book now!</h1>
     <span class="promo-text">DISCOUNT JUST TODAY! السعر المخفض اليوم فقط</span>
