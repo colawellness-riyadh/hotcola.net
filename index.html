@@ -36,6 +36,7 @@
         :root {
             --gold: #d4a017;
             --gold-bright: #f2b600;
+            --dark-bg: rgba(15, 15, 15, 0.95);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -54,7 +55,7 @@
             min-width: 100%; min-height: 100%;
             z-index: -1;
             object-fit: cover;
-            filter: brightness(0.4);
+            filter: brightness(0.35);
         }
 
         .content-wrapper {
@@ -80,57 +81,158 @@
             margin-bottom: 20px;
         }
 
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold-bright);
+            font-size: 22px;
+            margin: 30px auto 10px auto;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .price-badge {
+            display: inline-block;
+            background: rgba(212, 160, 23, 0.2);
+            color: var(--gold-bright);
+            border: 1px solid var(--gold);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
         .services-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             max-width: 1100px;
-            margin: 40px auto;
+            margin: 15px auto 40px auto;
         }
 
         .card {
-            background: rgba(15, 15, 15, 0.9);
+            background: var(--dark-bg);
             padding: 30px;
             border-radius: 15px;
             border: 1px solid rgba(212, 160, 23, 0.2);
             text-decoration: none;
             color: #fff;
             transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card:hover {
+            border: 1px solid var(--gold);
+            transform: translateY(-5px);
         }
 
         .card i { font-size: 30px; color: var(--gold); margin-bottom: 15px; }
         .card h3 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 10px; }
+        .card p { font-size: 14px; color: #ccc; }
+
+        /* PREMIUM GOLD HIGHLIGHT CARD */
+        .card.premium-highlight {
+            background: linear-gradient(135deg, #1a1508 0%, #000000 100%);
+            border: 2px solid var(--gold-bright);
+            box-shadow: 0 0 20px rgba(242, 182, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card.premium-highlight::before {
+            content: '★ BEST VALUE';
+            position: absolute;
+            top: 12px;
+            right: -30px;
+            background: var(--gold-bright);
+            color: #000;
+            font-size: 10px;
+            font-weight: 900;
+            padding: 4px 30px;
+            transform: rotate(45deg);
+        }
+
+        .card.premium-highlight i, 
+        .card.premium-highlight h3 {
+            color: var(--gold-bright);
+        }
+
+        .card.premium-highlight .price-badge {
+            background: var(--gold-bright);
+            color: #000;
+            border: none;
+            font-weight: 900;
+        }
+
+        /* BUTTONS DESIGN */
+        .cta-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
 
         .cta-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #d4a017, #f2b600);
-            color: #000;
-            padding: 15px 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 35px;
             text-decoration: none;
             font-weight: 900;
             border-radius: 50px;
-            margin: 20px 0;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            font-size: 16px;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+            min-width: 240px;
         }
 
-        /* LOCATION SECTION - REQUIRED BY GOOGLE ADS */
-        .map-section {
-            max-width: 1200px;
-            margin: 60px auto 0 auto;
-            text-align: center;
-            padding: 40px 20px;
-            background: rgba(10, 10, 10, 0.8);
-            border-radius: 25px;
-            border: 1px solid #222;
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #d4a017, #f2b600);
+            color: #000;
         }
 
-        .map-container {
-            width: 100%;
-            height: 450px;
-            border-radius: 20px;
-            overflow: hidden;
+        .btn-whatsapp:hover {
+            background: linear-gradient(45deg, #f2b600, #ffffff);
+            transform: scale(1.03);
+        }
+
+        .btn-call {
+            background: transparent;
+            color: var(--gold-bright);
             border: 2px solid var(--gold);
+        }
+
+        .btn-call:hover {
+            background: rgba(212, 160, 23, 0.1);
+            color: #fff;
+            border-color: #fff;
+            transform: scale(1.03);
+        }
+
+        /* MAP NIGHT MODE DESIGN */
+        .map-section {
+            max-width: 900px;
+            margin: 50px auto 0 auto;
+            text-align: center;
+            padding: 30px;
+            background: rgba(10, 10, 10, 0.85);
+            border-radius: 20px;
+            border: 1px solid var(--gold);
+        }
+
+        .map-wrapper {
+            width: 100%;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
             margin-top: 20px;
+            border: 1px solid rgba(212, 160, 23, 0.4);
+            filter: invert(90%) hue-rotate(180deg) brightness(0.9) contrast(1.2);
         }
 
         .footer {
@@ -148,43 +250,74 @@
     </video>
 
     <div class="navbar">
-        <h2 style="font-family:'Playfair Display'; color:var(--gold-bright); font-size:20px;">SWEET COLA MASSAGE</h2>
+        <h2 style="font-family:'Playfair Display'; color:var(--gold-bright); font-size:20px; letter-spacing: 1px;">SWEET COLA MASSAGE</h2>
     </div>
 
     <div class="content-wrapper">
         <img src="Logo.png" alt="Sweet Cola Logo" class="logo-main">
         
-        <h1 style="font-family:'Playfair Display'; font-size: 28px;">Premium Wellness & Therapy</h1>
-        <p style="color:#ccc;">Certified Therapeutic Services In Al Yarmouk, Riyadh</p>
+        <h1 style="font-family:'Playfair Display'; font-size: 32px; margin-bottom: 5px;">Our Exclusive Spa Services</h1>
+        <p style="color:#ccc; font-size: 15px;">Premier Wellness & Therapeutic Center In Al Yarmouk, Riyadh</p>
 
+        <h2 class="section-title">Basic Wellness Massage</h2>
+        <div class="price-badge">ALL BASIC MASSAGES - 150 SR / 40 MINUTES</div>
+        
         <div class="services-container">
             <a href="details.html?service=thai" class="card">
-                <i class="fas fa-leaf"></i>
-                <h3>Thai Therapy</h3>
-                <p>Traditional muscle recovery techniques.</p>
+                <i class="fas fa-hands"></i>
+                <h3>Thai Massage</h3>
+                <p>Deep extension & full body stretch techniques.</p>
             </a>
             <a href="details.html?service=swedish" class="card">
                 <i class="fas fa-spa"></i>
                 <h3>Swedish Massage</h3>
-                <p>Relaxing strokes for stress relief.</p>
+                <p>Gentle long strokes aimed at relieving stress.</p>
+            </a>
+            <a href="details.html?service=oil" class="card">
+                <i class="fas fa-tint"></i>
+                <h3>Oil Massage</h3>
+                <p>Soothing premium essential oils for relaxing body.</p>
             </a>
             <a href="details.html?service=moroccan" class="card">
-                <i class="fas fa-water"></i>
+                <i class="fas fa-hot-tub"></i>
                 <h3>Moroccan Bath</h3>
-                <p>Deep skin rejuvenation and cleansing.</p>
+                <p>Traditional deep skin cleansing and exfoliation.</p>
             </a>
         </div>
 
-        <a href="https://wa.me/966560958973" class="cta-button">BOOK APPOINTMENT</a>
+        <h2 class="section-title">Premium Packages & Grooming</h2>
+        
+        <div class="services-container">
+            <a href="details.html?service=premium" class="card premium-highlight">
+                <i class="fas fa-crown"></i>
+                <h3>Premium Spa Package</h3>
+                <div class="price-badge">SAR 450</div>
+                <p style="font-weight: 600; color: #fff; margin-bottom: 8px;">2h 30m of Full Luxury Care</p>
+                <p style="font-size: 13px; line-height: 1.4;">Includes: Full Body Massage, Moroccan Bath, Hot Stone Therapy, plus professional Manicure and Pedicure.</p>
+            </a>
 
-        <div style="margin-top: 50px; padding: 30px; background: rgba(255,255,255,0.05); border-radius: 20px; border: 1px solid var(--gold);">
-    <h2 style="font-family:'Playfair Display'; color:var(--gold-bright); margin-bottom: 15px;">VISIT OUR SPA</h2>
-    <p style="color: #ccc; margin-bottom: 20px;">Prince Bandar Bin Abdulaziz St, Al Yarmouk, Riyadh</p>
-    <div style="width: 100%; height: 300px; border-radius: 15px; overflow: hidden;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.582845624!2d46.7900!3d24.8100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ4JzM2LjAiTiA0NsKwNDcnMjQuMCJF!5e0!3m2!1sen!2ssa!4v1715500000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</div>
-        </section>
+            <a href="details.html?service=shaving" class="card">
+                <i class="fas fa-razor"></i>
+                <h3 style="margin-top: 15px;">Shaving (On Demand)</h3>
+                <div class="price-badge" style="margin-top: 5px;">FULL CARE</div>
+                <p>Clean and professional grooming services including Full Body Shaving, Bikini, and Underarm cleaning.</p>
+            </a>
+        </div>
+
+        <div class="cta-container">
+            <a href="tel:+966560369386" class="cta-button btn-call">
+                <i class="fas fa-phone-alt"></i> CALL NOW
+            </a>
+            <a href="https://wa.me/966560369386" class="cta-button btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> BOOK VIA WHATSAPP
+            </a>
+        </div>
+
+        <div class="map-section">
+            <h2 style="font-family:'Playfair Display'; color:var(--gold-bright); margin-bottom: 5px;">VISIT OUR SPA</h2>
+            <p style="color: #ccc; font-size: 14px;">3100 Al Misroh, Ishbiliyah, RFYA6194, 6194, Riyadh 13251</p>
+            <div class="map-wrapper">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7243.739242884097!2d46.7861847!3d24.7999176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2effd68e538899%3A0xa53e0f232c0028b0!2sSweet%20Cola%20Massage%20In%20Riyadh!5e0!3m2!1sen!2ssa!4v1779292621456!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
 
         <div class="footer">
             <p>© 2026 Sweet Cola Massage Riyadh. Licensed Professional Facility.</p>
