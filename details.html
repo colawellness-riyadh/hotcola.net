@@ -44,7 +44,15 @@
             overflow-x: hidden;
         }
 
-        .header-title { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 5px; color: var(--gold-bright); text-shadow: 0 0 15px rgba(242, 182, 0, 0.4); }
+        .header-title { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 32px; 
+            margin-bottom: 8px; 
+            color: var(--gold-bright); 
+            text-shadow: 0 0 15px rgba(242, 182, 0, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
         .promo-text { color: #fff; font-weight: 700; font-size: 18px; margin-bottom: 40px; display: block; }
 
         .promotion-slider {
@@ -104,9 +112,36 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            overflow: hidden;
         }
 
-        .slide-content img { width: 100%; height: 75%; object-fit: cover; }
+        /* DITO NATIN TINAKPAN AT GINAWANG GOLDEN-TONE ANG LALONG PINK NA IMAGES */
+        .img-container {
+            position: relative;
+            width: 100%;
+            height: 75%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .img-container img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+            /* Binawasan ang contrast ng pink at sinalpakan ng sepia/gold tone filter */
+            filter: brightness(0.6) sepia(0.8) hue-rotate(-15deg) saturate(1.4);
+        }
+
+        /* Transparent Gold Overlay layer para patayin ang matingkad na pink */
+        .img-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(212, 160, 23, 0.25), rgba(0, 0, 0, 0.7));
+            z-index: 4;
+            pointer-events: none;
+        }
 
         .slide-content .shop-now-btn {
             width: 100%; height: 25%;
@@ -114,6 +149,8 @@
             color: #000; font-weight: 900;
             display: flex; align-items: center; justify-content: center;
             font-size: 14px; text-decoration: none;
+            position: relative;
+            z-index: 5;
         }
 
         .booking-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; }
@@ -188,25 +225,25 @@
 </head>
 <body>
 
-    <h1 class="header-title">YOU WANT TO BOOK NOW?</h1>
+    <h1 class="header-title">Ready to schedule your session today? Book now!</h1>
     <span class="promo-text">DISCOUNT JUST TODAY! السعر المخفض اليوم فقط</span>
 
     <section class="promotion-slider">
         <div class="slider-track">
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155256719.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155341453.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155517438.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155553693.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155636508.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155714910.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155748650.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155256719.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155341453.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155517438.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155553693.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155636508.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155714910.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
-            <div class="slide-item"><div class="slide-content"><img src="FixPlus_20260510_155748650.jpg"><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155256719.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155341453.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155517438.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155553693.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155636508.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155714910.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155748650.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155256719.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155341453.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155517438.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155553693.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155636508.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155714910.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155748650.jpg"></div><a href="https://wa.me/966560958973" class="shop-now-btn">BOOK NOW</a></div></div>
         </div>
     </section>
 
@@ -222,7 +259,6 @@
         <a href="https://wa.me/966560958973?text=Hi! I want to book Swedish Massage" class="service-card">
             <i class="fas fa-spa"></i>
             <h3>Swedish Massage</h3>
-            <span class="arabic-title">مساج سويدي</span>
             <span class="arabic-title">مساج سويدي</span>
             <p>Gentle strokes for relaxation.<br>ضربات لطيفة للاسترخاء.</p>
             <div class="price-btn">150 SR / 40 MINS</div>
