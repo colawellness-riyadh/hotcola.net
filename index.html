@@ -5,21 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Cola Massage In Riyadh | Professional Wellness Center</title>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18066238938"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-18066238938');
-    </script>
-
-    <script>
-      gtag('config', 'AW-18066238938/G5EJCI2E_6wcENrb06ZD', {
-        'phone_conversion_number': '+966560958973'
-      });
-    </script>
-
     <script type='text/javascript'>
     (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
     {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
@@ -38,16 +23,6 @@
       gtag('js', new Date());
       gtag('config', 'G-F812D65FTX');
     </script>
-
-    <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18066238938"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-
-   gtag('config', 'AW-18066238938');
-   </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -69,13 +44,14 @@
             overflow-x: hidden;
         }
 
+        /* VIDEO BACKGROUND */
         #video-bg {
             position: fixed;
             right: 0; bottom: 0;
             min-width: 100%; min-height: 100%;
             z-index: -1;
             object-fit: cover;
-            filter: brightness(0.35);
+            filter: brightness(0.35); /* Mas madilim para sa dark mode vibe */
         }
 
         .content-wrapper {
@@ -99,6 +75,7 @@
             border-radius: 50%;
             border: 2px solid var(--gold);
             margin-bottom: 25px;
+            box-shadow: 0 0 20px rgba(212, 160, 23, 0.3);
         }
 
         .services-container {
@@ -121,45 +98,33 @@
 
         .card:hover {
             border-color: var(--gold);
+            background: rgba(30, 30, 30, 0.95);
             transform: translateY(-5px);
         }
 
         .card i { font-size: 32px; color: var(--gold); margin-bottom: 15px; }
-        .card h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 10px; }
-
-        /* BUTTONS CONTAINER */
-        .cta-container {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 30px 0;
-            flex-wrap: wrap;
-        }
+        .card h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 10px; color: var(--white-text); }
+        .card p { font-size: 14px; color: #aaa; }
 
         .cta-button {
-            background: var(--white-text);
+            display: inline-block;
+            background: var(--white-text); /* White button para sa dark mode contrast */
             color: #000;
-            padding: 18px 40px;
+            padding: 18px 60px;
             text-decoration: none;
             font-weight: 900;
             border-radius: 4px;
+            margin: 30px 0;
             letter-spacing: 1px;
             transition: 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .call-button {
-            background: var(--gold);
-            color: #000;
         }
 
         .cta-button:hover {
-            opacity: 0.9;
+            background: var(--gold);
             transform: scale(1.02);
         }
 
+        /* DARK MODE MAP STYLING */
         .location-section {
             margin-top: 80px;
             padding: 60px 5%;
@@ -174,7 +139,8 @@
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            filter: grayscale(1) invert(90%) contrast(110%);
+            /* ETO ANG TRICK PARA MAG-BLACK ANG MAPA */
+            filter: grayscale(1) invert(90%) contrast(100%);
         }
 
         .footer {
@@ -182,6 +148,7 @@
             padding-bottom: 40px;
             font-size: 12px;
             color: #555;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -198,7 +165,7 @@
     <div class="content-wrapper">
         <img src="Logo.png" alt="Sweet Cola Logo" class="logo-main">
         
-        <h1 style="font-family:'Playfair Display'; font-size: 36px; margin-bottom: 10px;">Luxury Wellness & Therapy</h1>
+        <h1 style="font-family:'Playfair Display'; font-size: 36px; margin-bottom: 10px; letter-spacing: 1px;">Luxury Wellness & Therapy</h1>
         <p style="color:#888; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Al Yarmouk District • Riyadh</p>
 
         <div class="services-container">
@@ -219,20 +186,13 @@
             </a>
         </div>
 
-        <div class="cta-container">
-            <a href="tel:+966560958973" class="cta-button call-button">
-                <i class="fas fa-phone"></i> CALL NOW
-            </a>
-            <a href="https://wa.me/966560958973" class="cta-button">
-                <i class="fab fa-whatsapp"></i> BOOK NOW
-            </a>
-        </div>
+        <a href="https://wa.me/966560958973" class="cta-button">BOOK NOW</a>
 
         <section class="location-section">
             <h2 style="font-family:'Playfair Display'; font-size: 24px;">VISIT OUR SPA</h2>
-            <p style="color: #666; margin-top: 10px;">3100 Al Misroh, Ishbiliyah, RFYA6194, 6194, Riyadh 13251, Saudi Arabia</p>
+            <p style="color: #666; margin-top: 10px;">Prince Bandar Bin Abdulaziz St, Al Yarmouk, Riyadh, Saudi Arabia</p>
             <div class="map-wrapper">
-                <iframe <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.85058453855!2d46.78408077788196!3d24.800569347646757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2effd68e538899%3A0xa53e0f232c0028b0!2sSweet%20Cola%20Massage%20In%20Riyadh!5e0!3m2!1sen!2scz!4v1779246490442!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://maps.google.com/?cid=11906971108550650032&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
 
