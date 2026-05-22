@@ -1,340 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="E1MjAl0yem_tdAbJqa7RJkqpm6oCTwMAtTx1oy6roLg" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Cola Massage In Riyadh | Professional Wellness Center</title>
-
-    <meta property="og:title" content="Sweet Cola Massage In Riyadh">
-    <meta property="og:description" content="Premier professional wellness and therapeutic center in Al Misroh, Ishbiliyah, Riyadh.">
-    <meta property="og:image" content="https://mickay.mooo.com/Logo.png">
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:url" content="https://mickay.mooo.com">
-    <meta property="og:type" content="website">
-
-    <script type='text/javascript'>
-    (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
-    {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
-    a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
-    r.src=n;var u=t.getElementsByTagName(s)[0];
-    u.parentNode.insertBefore(r,u);})(window,document,
-    'https://sc-static.net/scevent.min.js');
-    snaptr('init', 'c6079118-739c-42a2-a3c6-ed02777f81e1', {});
-    snaptr('track', 'PAGE_VIEW');
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8EW6CLTZP6"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F812D65FTX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-8EW6CLTZP6');
+      gtag('config', 'G-F812D65FTX');
     </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Menu | Sweet Cola Massage In Riyadh</title>
 
     <link rel="icon" type="image/png" href="Logo.png?v=3">
     <link rel="apple-touch-icon" href="Logo.png?v=3">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <style>
+    
+    <style> 
         :root {
             --gold: #d4a017;
             --gold-bright: #f2b600;
-            --dark-bg: rgba(15, 15, 15, 0.95);
+            --dark-card: #0a0a0a;
+            --pure-gold: #FFD700;
+            --yellow-btn: #e6b012;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #000;
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #000; 
             color: #fff;
+            padding: 40px 5%; 
+            text-align: center; 
+            min-height: 100vh;
             overflow-x: hidden;
-        }
-
-        /* VIDEO BACKGROUND */
-        #video-bg {
-            position: fixed;
-            right: 0; bottom: 0;
-            min-width: 100%; min-height: 100%;
-            z-index: -1;
-            object-fit: cover;
-            filter: brightness(0.35);
-        }
-
-        .content-wrapper {
             position: relative;
-            z-index: 1;
-            padding: 120px 5% 50px 5%;
-            text-align: center;
         }
 
-        .navbar {
+        .video-bg {
             position: fixed;
-            top: 0; left: 0; width: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            border-bottom: 2px solid var(--gold);
-            padding: 15px;
-            z-index: 100;
+            top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            pointer-events: none;
         }
 
-        .logo-main {
-            width: 140px;
-            border-radius: 50%;
-            border: 2px solid var(--gold);
-            margin-bottom: 20px;
+        .video-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+            pointer-events: none;
         }
 
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            color: var(--gold-bright);
-            font-size: 22px;
-            margin: 30px auto 10px auto;
-            letter-spacing: 1px;
+        .header-title { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 32px; 
+            margin-bottom: 8px; 
+            color: var(--gold-bright); 
+            text-shadow: 0 0 15px rgba(242, 182, 0, 0.4);
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
+        .promo-text { color: #fff; font-weight: 700; font-size: 18px; margin-bottom: 40px; display: block; }
 
-        .price-badge {
-            display: inline-block;
-            background: rgba(212, 160, 23, 0.2);
-            color: var(--gold-bright);
+        .promotion-slider {
+            max-width: 1200px;
+            margin: 0 auto 60px auto;
+            overflow: hidden;
+            position: relative;
+            z-index: 5;
+            background: rgba(0,0,0,0.65);
             border: 1px solid var(--gold);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 15px;
+            border-radius: 25px;
+            padding: 30px 0;
+            backdrop-filter: blur(5px);
         }
 
-        .services-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        .slider-track {
+            display: flex;
+            width: calc(220px * 14 + 20px * 14); 
             gap: 20px;
-            max-width: 1100px;
-            margin: 15px auto 40px auto;
+            animation: slideRight 25s linear infinite;
         }
 
-        .card {
-            background: var(--dark-bg);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(212, 160, 23, 0.2);
-            text-decoration: none;
-            color: #fff;
-            transition: 0.4s;
+        .slide-item {
+            flex-shrink: 0;
+            position: relative;
+            width: 220px;
+            height: 300px;
+            background: #000;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide-item::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: conic-gradient(transparent, var(--gold-bright), transparent 30%, transparent 50%, var(--pure-gold), transparent 80%);
+            animation: spin 4s linear infinite;
+            z-index: 1;
+        }
+
+        .slide-item::after {
+            content: '';
+            position: absolute;
+            inset: 3px;
+            background: var(--dark-card);
+            border-radius: 17px;
+            z-index: 2;
+        }
+
+        .slide-content {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .img-container {
+            position: relative;
+            width: 100%;
+            height: 75%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .img-container img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+        }
+
+        .slide-content .shop-now-btn {
+            width: 100%; height: 25%;
+            background: var(--yellow-btn);
+            color: #000; font-weight: 900;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 14px; text-decoration: none;
+            position: relative;
+            z-index: 5;
+        }
+
+        .booking-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+        }
+
+        .service-card { 
+            position: relative;
+            padding: 30px; 
+            border-radius: 25px; 
+            text-decoration: none; 
+            color: #fff; 
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-        }
-
-        .card:hover {
-            border: 1px solid var(--gold);
-            transform: translateY(-5px);
-        }
-
-        .card i { font-size: 30px; color: var(--gold); margin-bottom: 15px; }
-        .card h3 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 10px; }
-        .card p { font-size: 14px; color: #ccc; }
-
-        /* PREMIUM GOLD HIGHLIGHT CARD */
-        .card.premium-highlight {
-            background: linear-gradient(135deg, #1a1508 0%, #000000 100%);
-            border: 2px solid var(--gold-bright);
-            box-shadow: 0 0 20px rgba(242, 182, 0, 0.2);
-            position: relative;
             overflow: hidden;
+            transition: 0.3s;
+            backdrop-filter: blur(3px);
         }
 
-        .card.premium-highlight::before {
-            content: '★ BEST VALUE';
+        .service-card::before {
+            content: '';
             position: absolute;
-            top: 12px;
-            right: -30px;
-            background: var(--gold-bright);
-            color: #000;
-            font-size: 10px;
-            font-weight: 900;
-            padding: 4px 30px;
-            transform: rotate(45deg);
+            top: -100%; left: -100%;
+            width: 300%; height: 300%;
+            background: conic-gradient(transparent 0deg, transparent 90deg, var(--gold-bright) 180deg, transparent 180deg, transparent 270deg, var(--gold-bright) 360deg);
+            z-index: 0;
+            animation: spin 3s linear infinite;
         }
 
-        .card.premium-highlight i, 
-        .card.premium-highlight h3 {
-            color: var(--gold-bright);
-        }
-
-        .card.premium-highlight .price-badge {
-            background: var(--gold-bright);
-            color: #000;
-            border: none;
-            font-weight: 900;
-        }
-
-        /* BUTTONS DESIGN */
-        .cta-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin: 30px 0;
-        }
-
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 15px 35px;
-            text-decoration: none;
-            font-weight: 900;
-            border-radius: 50px;
-            font-size: 16px;
-            transition: 0.3s ease;
-            box-shadow: 0 8px 15px rgba(0,0,0,0.4);
-            min-width: 240px;
-        }
-
-        .btn-whatsapp {
-            background: linear-gradient(45deg, #d4a017, #f2b600);
-            color: #000;
-        }
-
-        .btn-whatsapp:hover {
-            background: linear-gradient(45deg, #f2b600, #ffffff);
-            transform: scale(1.03);
-        }
-
-        .btn-call {
-            background: transparent;
-            color: var(--gold-bright);
-            border: 2px solid var(--gold);
-        }
-
-        .btn-call:hover {
-            background: rgba(212, 160, 23, 0.1);
-            color: #fff;
-            border-color: #fff;
-            transform: scale(1.03);
-        }
-
-        /* MAP NIGHT MODE DESIGN */
-        .map-section {
-            max-width: 900px;
-            margin: 50px auto 0 auto;
-            text-align: center;
-            padding: 30px;
+        .service-card::after {
+            content: '';
+            position: absolute;
+            inset: 3px;
             background: rgba(10, 10, 10, 0.85);
-            border-radius: 20px;
-            border: 1px solid var(--gold);
+            border-radius: 22px;
+            z-index: 1;
         }
 
-        .map-wrapper {
-            width: 100%;
-            height: 350px;
-            border-radius: 15px;
-            overflow: hidden;
-            margin-top: 20px;
-            border: 1px solid rgba(212, 160, 23, 0.4);
-            filter: invert(90%) hue-rotate(180deg) brightness(0.9) contrast(1.2);
+        .service-card > * { position: relative; z-index: 2; }
+        .service-card i { font-size: 30px; color: var(--gold); margin-bottom: 15px; }
+        .service-card h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 5px; }
+        .service-card .arabic-title { font-size: 20px; color: var(--gold); font-weight: bold; margin-bottom: 15px; }
+        .service-card p { font-size: 14px; color: #ccc; line-height: 1.5; margin-bottom: 20px; }
+
+        .price-btn { 
+            background: #000; 
+            color: var(--gold-bright); 
+            padding: 12px 30px; 
+            border-radius: 50px; 
+            font-weight: 700; 
+            font-size: 16px;
+            border: 1px solid #333;
         }
 
-        .footer {
-            margin-top: 60px;
-            padding-bottom: 40px;
-            font-size: 13px;
-            color: #888;
+        .premium-card::after { background: var(--gold); }
+        .premium-card::before { background: conic-gradient(transparent 0deg, #000 180deg, #fff 360deg); }
+        .premium-card > * { color: #000 !important; }
+        .premium-card p { color: #000 !important; font-weight: 600; }
+        .premium-card .price-btn { background: #000 !important; color: var(--gold-bright) !important; border: none; }
+
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        @keyframes slideRight { 
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-220px * 7 - 20px * 7)); }
         }
+
+        .note { font-size: 12px; color: #999; margin-top: 50px; font-style: italic; }
+        
+        .footer-nav { margin-top: 30px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .footer-link { color: var(--gold); text-decoration: none; font-weight: 600; font-size: 16px; transition: 0.3s; }
+        .footer-link:hover { color: #fff; text-shadow: 0 0 10px var(--gold); }
+        .separator { color: #444; }
     </style>
 </head>
 <body>
 
-    <video autoplay muted loop playsinline id="video-bg">
+    <video class="video-bg" autoplay loop muted playsinline>
         <source src="vecteezy_stunning-golden-glitter-particle-streams-flow-dynamically_69209508.mp4" type="video/mp4">
     </video>
+    <div class="video-overlay"></div>
 
-    <div class="navbar">
-        <h2 style="font-family:'Playfair Display'; color:var(--gold-bright); font-size:20px; letter-spacing: 1px;">SWEET COLA MASSAGE</h2>
+    <h1 class="header-title">Ready to schedule your session today? Book now!</h1>
+    <span class="promo-text">DISCOUNT JUST TODAY! السعر المخفض اليوم فقط</span>
+
+    <section class="promotion-slider">
+        <div class="slider-track">
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155256719.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155341453.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155517438.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155553693.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155636508.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155714910.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155748650.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155256719.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155341453.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155517438.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155553693.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155636508.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155714910.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+            <div class="slide-item"><div class="slide-content"><div class="img-container"><img src="FixPlus_20260510_155748650.jpg"></div><a href="https://wa.me/966560369386" class="shop-now-btn">BOOK NOW</a></div></div>
+        </div>
+    </section>
+
+    <div class="booking-grid">
+        <a href="https://wa.me/966560369386?text=Hi! I want to book Thai Massage" class="service-card">
+            <i class="fas fa-hands-holding"></i>
+            <h3>Thai Massage</h3>
+            <span class="arabic-title">مساج تايلاندي</span>
+            <p>Traditional deep stretch therapy.<br>العلاج التقليدي للتمدد العميق.</p>
+            <div class="price-btn">130 SR / 40 MINS</div>
+        </a>
+
+        <a href="https://wa.me/966560369386?text=Hi! I want to book Swedish Massage" class="service-card">
+            <i class="fas fa-spa"></i>
+            <h3>Swedish Massage</h3>
+            <span class="arabic-title">مساج سويدي</span>
+            <p>Gentle strokes for relaxation.<br>ضربات لطيفة للاسترخاء.</p>
+            <div class="price-btn">130 SR / 40 MINS</div>
+        </a>
+
+        <a href="https://wa.me/966560369386?text=Hi! I want to book Oil Massage" class="service-card">
+            <i class="fas fa-droplet"></i>
+            <h3>Oil Massage</h3>
+            <span class="arabic-title">مساج بالزيت</span>
+            <p>Full body calming massage.<br>تدليك مهدئ للجسم بالكامل.</p>
+            <div class="price-btn">130 SR / 40 MINS</div>
+        </a>
+
+        <a href="https://wa.me/966560369386?text=Hi! I want to book Moroccan Bath" class="service-card">
+            <i class="fas fa-bath"></i>
+            <h3>Moroccan Bath</h3>
+            <span class="arabic-title">حمام مغربي</span>
+            <p>Traditional skin cleansing.<br>تنظيف البشرة التقليدي.</p>
+            <div class="price-btn">130 SR / 40 MINS</div>
+        </a>
+
+        <a href="https://wa.me/966560369386?text=Hi! I want to book Shaving Service" class="service-card">
+            <i class="fas fa-razor"></i>
+            <h3>Shaving (On Demand)</h3>
+            <span class="arabic-title">حلاقة عند الطلب</span>
+            <p>Clean and professional grooming services including Full Body Shaving, Bikini, and Underarm cleaning.<br>خدمات الحلاقة والنظافة الشخصية الاحترافية.</p>
+            <div class="price-btn">FULL CARE</div>
+        </a>
+
+        <a href="https://wa.me/966560369386?text=Hi! I want to book the PREMIUM PACKAGE" class="service-card premium-card">
+            <i class="fas fa-crown"></i>
+            <h3>PREMIUM PACKAGE</h3>
+            <span class="arabic-title">باقة بريميوم</span>
+            <p>2h 30m of Luxury: Massage, Bath, Stone, Mani & Pedi.<br>2 ساعة و30 دقيقة من الفخامة.</p>
+            <div class="price-btn">450 SR / FULL CARE</div>
+        </a>
     </div>
 
-    <div class="content-wrapper">
-        <img src="Logo.png" alt="Sweet Cola Logo" class="logo-main">
-
-        <h1 style="font-family:'Playfair Display'; font-size: 32px; margin-bottom: 5px;">Our Exclusive Spa Services</h1>
-        <p style="color:#ccc; font-size: 15px;">Premier Wellness & Therapeutic Center In Al Misroh, Ishbiliyah, Riyadh</p>
-
-        <h2 class="section-title">Basic Wellness Massage</h2>
-        <div class="price-badge">ALL BASIC MASSAGES - 130 SR / 40 MINUTES</div>
-
-        <div class="services-container">
-            <a href="booking.html" class="card">
-                <i class="fas fa-hands"></i>
-                <h3>Thai Massage</h3>
-                <p>Deep extension & full body stretch techniques.</p>
-            </a>
-            <a href="booking.html" class="card">
-                <i class="fas fa-spa"></i>
-                <h3>Swedish Massage</h3>
-                <p>Gentle long strokes aimed at relieving stress.</p>
-            </a>
-            <a href="booking.html" class="card">
-                <i class="fas fa-tint"></i>
-                <h3>Oil Massage</h3>
-                <p>Soothing premium essential oils for relaxing body.</p>
-            </a>
-            <a href="booking.html" class="card">
-                <i class="fas fa-hot-tub"></i>
-                <h3>Moroccan Bath</h3>
-                <p>Traditional deep skin cleansing and exfoliation.</p>
-            </a>
-        </div>
-
-        <h2 class="section-title">Premium Packages & Grooming</h2>
-
-        <div class="services-container">
-            <a href="booking.html" class="card premium-highlight">
-                <i class="fas fa-crown"></i>
-                <h3>Premium Spa Package</h3>
-                <div class="price-badge">SAR 450</div>
-                <p style="font-weight: 600; color: #fff; margin-bottom: 8px;">2h 30m of Full Luxury Care</p>
-                <p style="font-size: 13px; line-height: 1.4;">Includes: Full Body Massage, Moroccan Bath, Hot Stone Therapy, plus professional Manicure and Pedicure.</p>
-            </a>
-
-            <a href="booking.html" class="card">
-                <i class="fas fa-razor"></i>
-                <h3 style="margin-top: 15px;">Shaving (On Demand)</h3>
-                <div class="price-badge" style="margin-top: 5px;">FULL CARE</div>
-                <p>Clean and professional grooming services including Full Body Shaving, Bikini, and Underarm cleaning.</p>
-            </a>
-        </div>
-
-        <div class="cta-container">
-            <a href="tel:+966560369386" class="cta-button btn-call">
-                <i class="fas fa-phone-alt"></i> CALL NOW
-            </a>
-            <a href="https://wa.me/966560369386" class="cta-button btn-whatsapp">
-                <i class="fab fa-whatsapp"></i> BOOK VIA WHATSAPP
-            </a>
-        </div>
-
-        <div class="map-section">
-            <h2 style="font-family:'Playfair Display'; color:var(--gold-bright); margin-bottom: 5px;">VISIT OUR SPA</h2>
-            <p style="color: #ccc; font-size: 14px;">3100 Al Misroh, Ishbiliyah, RFYA6194, 6194, Riyadh 13251</p>
-            <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.85058453843!2d46.78408077604559!3d24.800569347650242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2effd68e538899%3A0xa53e0f232c0028b0!2sSweet%20Cola%20Massage%20In%20Riyadh!5e0!3m2!1sen!2sus!4v1779396126755!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>© 2026 Sweet Cola Massage Riyadh. Licensed Professional Facility.</p>
-            <div style="margin-top: 15px;">
-                <a href="privacy-policy.html" style="color:var(--gold); text-decoration:none;">Privacy Policy</a> | 
-                <a href="return-policy.html" style="color:var(--gold); text-decoration:none;">Return Policy</a>
-            </div>
-        </div>
+    <p class="note">* Discount will apply for early bookings. Terms apply.</p>
+    
+    <div class="footer-nav">
+        <a href="index.html" class="footer-link">← Back to Home</a>
+        <span class="separator">|</span>
+        <a href="return-policy.html" class="footer-link">Return Policy</a>
     </div>
 
 </body>
