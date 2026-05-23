@@ -57,7 +57,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <style>
+    <st.premium-spa-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.premium-spa-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 30px;
+  background: linear-gradient(135deg, rgba(15, 12, 8, 0.98), rgba(5, 5, 5, 0.98));
+  border-radius: 24px;
+  border: 1.5px solid rgba(212, 165, 116, 0.4);
+  padding: 40px 35px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+.premium-spa-left h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: var(--gold-bright);
+  margin-bottom: 10px;
+}
+
+.premium-spa-badge {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--gold-primary);
+  color: var(--gold-bright);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.premium-spa-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: #c8c8c8;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.premium-spa-text.arabic {
+  direction: rtl;
+  text-align: right;
+  font-size: 15px;
+}
+
+.premium-spa-actions {
+  margin-top: 25px;
+}
+
+/* Right side with encoded image background */
+.premium-spa-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.premium-banner {
+  flex: 1;
+  border-radius: 18px;
+  border: 1.5px solid rgba(212, 165, 116, 0.5);
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  /* Replace this with your data URL */
+  /* background-image: url("data:image/jpeg;base64,...."); */
+}
+
+.shaving-box {
+  background: rgba(10, 10, 10, 0.95);
+  border-radius: 16px;
+  border: 1px solid rgba(212, 165, 116, 0.4);
+  padding: 16px 18px;
+}
+
+.shaving-box h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--gold-bright);
+  margin-bottom: 6px;
+}
+
+.shaving-box p {
+  font-size: 14px;
+  color: #c0c0c0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .premium-spa-card {
+    grid-template-columns: 1fr;
+    padding: 30px 22px;
+  }
+}
+yle>
         :root {
             --gold: #d4a017;
             --gold-bright: #f2b600;
