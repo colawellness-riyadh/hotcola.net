@@ -147,7 +147,6 @@
             align-items: center;
             justify-content: center;
         }
-        
         .card:hover {
             border: 1px solid var(--gold);
             transform: translateY(-5px);
@@ -189,6 +188,102 @@
             color: #000;
             border: none;
             font-weight: 900;
+        }
+
+        /* PREMIUM SPA THEME SECTION */
+        .premium-spa-section {
+            max-width: 1100px;
+            margin: 40px auto 30px auto;
+            padding: 25px 20px 30px 20px;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(0, 0, 0, 0.98));
+            border-radius: 20px;
+            border: 1px solid rgba(212, 160, 23, 0.5);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+            text-align: left;
+        }
+
+        .premium-spa-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .premium-spa-left h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            color: var(--gold-bright);
+            margin-bottom: 8px;
+        }
+
+        .premium-spa-left .premium-subtitle {
+            font-size: 14px;
+            color: #ddd;
+            margin-bottom: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .premium-spa-left .premium-desc {
+            font-size: 15px;
+            color: #ccc;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .premium-spa-left .premium-desc.arabic {
+            direction: rtl;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .premium-spa-badge {
+            display: inline-block;
+            padding: 7px 18px;
+            border-radius: 999px;
+            border: 1px solid var(--gold-bright);
+            color: var(--gold-bright);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .premium-spa-right {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .premium-banner {
+            flex: 1;
+            border-radius: 16px;
+            border: 1px solid rgba(212, 160, 23, 0.6);
+            background-color: #111;
+            background-size: cover;
+            background-position: center;
+            /* If you have a Base64 or image URL, set it here:
+               background-image: url("data:image/jpeg;base64,PASTE_HERE");
+            */
+        }
+
+        .premium-shaving-box {
+            background: rgba(10, 10, 10, 0.95);
+            border-radius: 14px;
+            border: 1px solid rgba(212, 160, 23, 0.5);
+            padding: 12px 14px;
+        }
+
+        .premium-shaving-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            color: var(--gold-bright);
+            margin-bottom: 4px;
+        }
+
+        .premium-shaving-box p {
+            font-size: 13px;
+            color: #ccc;
         }
 
         /* BUTTONS DESIGN */
@@ -265,6 +360,21 @@
             font-size: 13px;
             color: #888;
         }
+
+        @media (max-width: 768px) {
+            .premium-spa-section {
+                text-align: center;
+            }
+            .premium-spa-grid {
+                grid-template-columns: 1fr;
+            }
+            .premium-spa-left {
+                text-align: left;
+            }
+            .premium-spa-left .premium-desc.arabic {
+                text-align: right;
+            }
+        }
     </style>
 </head>
 <body>
@@ -282,6 +392,34 @@
         
         <h1 style="font-family:'Playfair Display'; font-size: 32px; margin-bottom: 5px;">Our Exclusive Spa Services</h1>
         <p style="color:#ccc; font-size: 15px;">Premier Wellness & Therapeutic Center In Al Misroh, Ishbiliyah, Riyadh</p>
+
+        <!-- PREMIUM SPA THEME BLOCK -->
+        <section class="premium-spa-section">
+            <div class="premium-spa-grid">
+                <div class="premium-spa-left">
+                    <div class="premium-spa-badge">PREMIUM SPA PACKAGE · SAR 450</div>
+                    <h2>2h 30m Full Luxury Care</h2>
+                    <p class="premium-subtitle">Massage · Moroccan Bath · Hot Stone · Manicure &amp; Pedicure</p>
+                    <p class="premium-desc">
+                        Enjoy our signature Premium Spa Package: a complete 2 hours and 30 minutes of indulgence including
+                        full body massage, traditional Moroccan bath, hot stone therapy, and professional manicure and pedicure.
+                    </p>
+                    <p class="premium-desc arabic">
+                        باقة بريميوم: ساعتان و30 دقيقة من الفخامة الكاملة – تشمل مساج للجسم بالكامل،
+                        حمام مغربي تقليدي، حجر ساخن، مانيكير وباديكير احترافي.
+                    </p>
+                </div>
+                <div class="premium-spa-right">
+                    <div class="premium-banner">
+                        <!-- Optional: set background-image in CSS with your poster -->
+                    </div>
+                    <div class="premium-shaving-box">
+                        <h3>Shaving (On Demand)</h3>
+                        <p>Full body shaving, bikini, and underarm grooming available upon request.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <h2 class="section-title">Basic Wellness Massage</h2>
         <div class="price-badge">ALL BASIC MASSAGES - 130 SR / 40 MINUTES</div>
