@@ -8,56 +8,53 @@
 
     <meta property="og:title" content="Sweet Cola Massage In Riyadh">
     <meta property="og:description" content="Premier professional wellness and therapeutic center in Al Misroh, Ishbiliyah, Riyadh.">
-    <meta property="og:image" content="https://mickay.mooo.com/Logo.png">
+    <meta property="og:image" content="https://hotcola-net.vercel.app/Logo.png">
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
-    <meta property="og:url" content="https://mickay.mooo.com">
+    <meta property="og:url" content="https://hotcola-net.vercel.app/">
     <meta property="og:type" content="website">
-    
-    <script type='text/javascript'>
-    (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
-    {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
-    a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
-    r.src=n;var u=t.getElementsByTagName(s)[0];
-    u.parentNode.insertBefore(r,u);})(window,document,
-    'https://sc-static.net/scevent.min.js');
-    snaptr('init', 'a7baa327-4fa3-436f-80cb-8922e3d82af2', {});
-    snaptr('track', 'PAGE_VIEW');
-    </script>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18066238938"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'AW-18066238938');
-    </script>
 
-    <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-18066238938/nYKyCPCjvLEcENrb06ZD',
-          'value': 1.0,
-          'currency': 'SAR',
-          'event_callback': callback
+      // 1. BASE CONFIGURATION AT PAG-AKTIBO NG ENHANCED CONVERSIONS
+      gtag('config', 'AW-18066238938', { 'allow_enhanced_conversions': true });
+
+      // 2. GOOGLE ADS CALL FROM WEBSITE TRACKING CONFIGURATION
+      gtag('config', 'AW-18066238938/G5EJCI2E_6wcENrb06ZD', {
+        'phone_conversion_number': '0560958973'
       });
-      return false;
-    }
-  <script>
-gtag('set', 'user_data', {
-  "email": "verendiamickaycola@gmail.com",
-  "phone_number": "+966560369386",
-  "address": {
-    "first_name": "Mick philip",
-    "last_name": "Verendia"
-  }
-});
-</script>
+
+      // 3. SET USER DATA PARA SA ENHANCED CONVERSIONS
+      gtag('set', 'user_data', {
+        "email": "verendiamickaycola@gmail.com",
+        "phone_number": "+966560369386",
+        "address": {
+          "first_name": "Mick philip",
+          "last_name": "Verendia"
+        }
+      });
+
+      // 4. FUNCTION PARA SA DIRECT CLICK TRACKING (WHATSAPP AT MANUAL CALLS)
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18066238938/nYKyCPCjvLEcENrb06ZD',
+            'value': 1.0,
+            'currency': 'SAR',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
 
     <link rel="icon" type="image/png" href="Logo.png?v=3">
     <link rel="apple-touch-icon" href="Logo.png?v=3">
@@ -338,8 +335,8 @@ gtag('set', 'user_data', {
         </div>
 
         <div class="cta-container">
-            <a href="tel:+966560369386" class="cta-button btn-call" onclick="return gtag_report_conversion('tel:+966560369386');">
-                <i class="fas fa-phone-alt"></i> CALL NOW
+            <a href="tel:+966560958973" class="cta-button btn-call" onclick="return gtag_report_conversion('tel:+966560958973');">
+                <i class="fas fa-phone-alt"></i> 0560958973
             </a>
             
             <a href="https://wa.me/966560369386" class="cta-button btn-whatsapp" onclick="return gtag_report_conversion('https://wa.me/966560369386');">
