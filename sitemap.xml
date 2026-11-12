@@ -1,15 +1,364 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://hotcola.net/</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://hotcola.net/details.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-</urlset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="CKgQ1_bQup7ctUb-Fifs6J74vFfbvAalu3jR2owMpLw" />
+    <meta name="facebook-domain-verification" content="j1hs2sma5d6pexpwbskfn273llij3x" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Experience premium relaxation at COLA Wellness Center in Riyadh. Luxury Cave & Wellness Suite offering world-class therapeutic massage and premium Moroccan bath treatments by certified professional therapists from the Philippines.">
+    
+    <title>COLA Wellness Center | Riyadh</title>
+
+    <meta property="og:image" content="https://cola-wellness.vercel.app/colalogo.png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:type" content="image/png">
+    <link rel="icon" type="image/png" href="https://cola-wellness.vercel.app/colalogo.png">
+    <link rel="apple-touch-icon" href="https://cola-wellness.vercel.app/colalogo.png">
+    
+    <link rel="icon" type="image/png" href="colalogo.png">
+    <link rel="shortcut icon" type="image/png" href="colalogo.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18066238938"></script>
+  
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18066238938"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-18066238938');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0a0a0a;
+            color: #E5E5E5;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        .luxury-font {
+            font-family: 'Cinzel', serif;
+        }
+        .gold-text {
+            color: #D4AF37;
+            background: linear-gradient(135deg, #FFF6D6 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-bg {
+            background: linear-gradient(135deg, #E6C667 0%, #C49A33 50%, #946E19 100%);
+        }
+        .gold-border {
+            border-color: #C49A33;
+        }
+        
+        /* BACKGROUND SLIDESHOW ANIMATION (DIFFERENT REFRESHING SPA PICS) */
+        .slideshow-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            animation: imageFade 18s linear infinite;
+        }
+        
+        @media (max-width: 768px) {
+            .slide:nth-child(1) {
+                background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=70&w=600&auto=format&fit=crop');
+                animation-delay: 0s;
+            }
+            .slide:nth-child(2) {
+                background-image: url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=70&w=600&auto=format&fit=crop');
+                animation-delay: 6s;
+            }
+            .slide:nth-child(3) {
+                background-image: url('https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=70&w=600&auto=format&fit=crop');
+                animation-delay: 12s;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .slide:nth-child(1) {
+                background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=70&w=1200&auto=format&fit=crop');
+                animation-delay: 0s;
+            }
+            .slide:nth-child(2) {
+                background-image: url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=70&w=1200&auto=format&fit=crop');
+                animation-delay: 6s;
+            }
+            .slide:nth-child(3) {
+                background-image: url('https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=70&w=1200&auto=format&fit=crop');
+                animation-delay: 12s;
+            }
+        }
+        
+        @keyframes imageFade {
+            0% { opacity: 0; animation-timing-function: ease-in; }
+            8% { opacity: 1; }
+            33% { opacity: 1; }
+            41% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        .dark-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.88) 0%, rgba(5, 5, 5, 0.82) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .typewriter-cursor::after {
+            content: '|';
+            animation: blink 0.8s infinite;
+            color: #D4AF37;
+            margin-left: 2px;
+            font-weight: bold;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between relative">
+
+    <div class="slideshow-container">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="absolute inset-0 bg-black/45 z-10"></div>
+    </div>
+    <div class="dark-overlay"></div>
+
+    <header class="w-full py-4 px-4 md:px-12 flex flex-col md:flex-row justify-between items-center bg-black/80 backdrop-blur-md border-b border-zinc-800/50 sticky top-0 z-50 gap-4 md:gap-0">
+        
+        <div class="w-full md:w-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2 md:space-x-3">
+                <img src="colalogo.png" alt="COLA Logo" class="w-9 h-9 md:w-12 md:h-12 object-contain rounded-full border border-amber-500/30">
+                <div class="flex flex-col">
+                    <span class="luxury-font text-lg md:text-2xl font-bold tracking-widest gold-text leading-none">COLA</span>
+                    <span class="text-[6px] md:text-[7px] tracking-[0.25em] text-zinc-400 mt-1 uppercase font-light">Wellness Center</span>
+                </div>
+            </div>
+            
+            <div class="flex md:hidden items-center space-x-2">
+                <a href="https://wa.me/966560958973" onclick="trackWhatsAppConversion()" class="p-2 bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 rounded-lg active:bg-emerald-600/40">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                </a>
+            </div>
+        </div>
+        
+        <nav class="w-full md:w-auto flex flex-row overflow-x-auto no-scrollbar justify-start md:justify-center items-center space-x-5 text-[9px] md:text-[10px] tracking-widest uppercase text-zinc-300 font-medium py-1">
+            <a href="index.html" class="hover:text-amber-400 text-amber-400 font-semibold whitespace-nowrap transition-colors">Home</a>
+            <a href="Facilities.html" class="hover:text-amber-400 whitespace-nowrap transition-colors">Facilities</a>
+            <a href="servicemenu.html" class="hover:text-amber-400 whitespace-nowrap transition-colors">Service Menu</a>
+            <a href="promotion.html" class="hover:text-amber-400 whitespace-nowrap transition-colors">Event/Promotion</a>
+            <a href="location.html" class="hover:text-amber-400 whitespace-nowrap transition-colors">Location</a>
+            <a href="https://www.facebook.com/sweetcola31/" target="_blank" class="hover:text-amber-400 whitespace-nowrap transition-colors">Facebook</a>
+            <a href="https://g.page/r/CbAoACwjDz6lEBM/review" target="_blank" class="hover:text-amber-400 whitespace-nowrap transition-colors">Rate/Review</a>
+            <a href="about.html" class="hover:text-amber-400 whitespace-nowrap transition-colors">About</a>
+             <a href="booking.html" class="hover:text-amber-400 whitespace-nowrap transition-colors">Book Now</a>
+        </nav>
+
+        <div class="hidden md:block">
+            <a href="booking.html" class="border border-amber-500/50 text-amber-400 text-[10px] tracking-widest font-semibold uppercase py-2 px-4 rounded hover:bg-amber-500/10 transition-all duration-300">
+                Book Online
+            </a>
+        </div>
+    </header>
+    
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 md:px-12 flex flex-col items-center justify-center py-12 relative z-10">
+        
+        <div class="map-section w-full max-w-2xl bg-[#0f0f0f]/95 backdrop-blur-md border gold-border rounded-2xl p-5 sm:p-8 text-center shadow-2xl">
+            
+            <h2 class="luxury-font gold-text text-2xl sm:text-3xl font-bold tracking-widest mb-2">
+                VISIT OUR SPA
+            </h2>
+            
+            <p class="text-zinc-400 text-xs sm:text-sm max-w-lg mx-auto mb-6 font-light leading-relaxed">
+                3100 Al Misroh, Ishbiliyah, RFYA6194, 6194, Riyadh 13251
+            </p>
+            
+            <div class="map-wrapper w-full h-[300px] sm:h-[380px] rounded-xl overflow-hidden border border-zinc-800 shadow-inner bg-neutral-900">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.8505845384484!2d46.78408077604559!3d24.800569347650242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2effd68e538899%3A0xa53e0f232c0028b0!2sSweet%20Cola%20Massage%20In%20Riyadh!5e0!3m2!1sen!2ssa!4v1782552145774!5m2!1sen!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>           
+            </div>
+        </div>
+
+        <div class="w-full max-w-md mx-auto mt-12 text-center bg-black/50 backdrop-blur-sm p-6 rounded-2xl border border-zinc-800/80 shadow-xl">
+            <div class="flex justify-center items-center gap-4 mb-4">
+                <div class="w-8 h-[1px] bg-zinc-700"></div>
+                <span class="text-[9px] tracking-[0.3em] uppercase text-zinc-400 block font-medium">Executive Suite Features</span>
+                <div class="w-8 h-[1px] bg-zinc-700"></div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 text-center">
+                <div>
+                    <p class="luxury-font text-base md:text-lg font-bold text-white">100%</p>
+                    <p class="text-[8px] tracking-widest text-zinc-500 uppercase mt-1">Premium</p>
+                </div>
+                <div class="border-x border-zinc-800">
+                    <p class="luxury-font text-base md:text-lg font-bold text-white">VIP</p>
+                    <p class="text-[8px] tracking-widest text-zinc-500 uppercase mt-1">Suites</p>
+                </div>
+                <div>
+                    <p class="luxury-font text-base md:text-lg font-bold text-white">24/7</p>
+                    <p class="text-[8px] tracking-widest text-zinc-500 uppercase mt-1">Service</p>
+                </div>
+            </div>
+            <p class="text-[8px] text-zinc-500 tracking-widest mt-4 uppercase font-mono">⚡ Instant Booking Confirmation Via WhatsApp</p>
+        </div>
+
+    </main>
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        
+        <div id="marketingBubble" class="bg-zinc-950 border gold-border text-zinc-200 text-xs py-2 px-4 rounded-xl shadow-2xl mb-3 max-w-[240px] relative font-medium backdrop-blur-md">
+            <span id="bubbleTypewriter" class="typewriter-cursor"></span>
+            <div class="absolute bottom-[-6px] right-5 w-3 h-3 bg-zinc-950 border-r border-b gold-border rotate-45"></div>
+        </div>
+
+        <div id="chatBox" class="hidden w-80 bg-zinc-950 border gold-border rounded-2xl shadow-2xl overflow-hidden mb-4 transition-all duration-300">
+            <div class="gold-bg p-4 flex items-center justify-between text-black">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white text-xs font-bold">CO</div>
+                    <div>
+                        <p class="font-bold text-sm tracking-wide">Cola Assistant</p>
+                        <p class="text-[9px] font-medium opacity-75">Online • Direct Link</p>
+                    </div>
+                </div>
+                <button onclick="toggleChat()" class="text-black font-bold text-lg hover:opacity-60 px-2 cursor-pointer">×</button>
+            </div>
+            <div class="p-5 space-y-4 bg-zinc-900/95 backdrop-blur">
+                <div class="space-y-1">
+                    <label class="text-[9px] uppercase tracking-widest text-zinc-400 block">I-type ang iyong mensahe rito:</label>
+                    <textarea id="custCustomMessage" rows="3" placeholder="Gusto ko pong magpa-book ng appointment ngayong araw..." 
+                              class="w-full bg-zinc-950 border border-zinc-800 text-white p-3 rounded-xl text-xs focus:outline-none focus:border-amber-400 resize-none"></textarea>
+                </div>
+                <button onclick="startWhatsAppChat()" 
+                        class="w-full gold-bg text-black text-xs font-bold uppercase tracking-widest py-3 rounded-xl hover:opacity-90 transition-all block text-center cursor-pointer">
+                    Start Chat via WhatsApp
+                </button>
+            </div>
+            <div class="p-2 text-center text-[8px] text-zinc-600 bg-zinc-950 border-t border-zinc-900">
+                Your message will automatically mirror on WhatsApp
+            </div>
+        </div>
+
+        <button onclick="toggleChat()" aria-label="Open Live Chat" class="w-14 h-14 bg-zinc-950 border gold-border text-amber-400 rounded-full flex items-center justify-center shadow-2xl hover:scale-105 transition-transform duration-200 cursor-pointer relative">
+            <span class="absolute top-0 right-0 flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+            </span>
+            <i class="fa-regular fa-comments text-xl"></i>
+        </button>
+    </div>
+
+    <footer class="w-full py-6 text-center border-t border-zinc-900/80 bg-black/90 backdrop-blur-md relative z-10">
+        <div class="max-w-md mx-auto flex flex-col items-center gap-2 px-4">
+            <div class="flex items-center gap-2 text-amber-500/90 text-[9px] tracking-widest font-bold uppercase bg-amber-500/5 px-4 py-1.5 rounded-full border border-amber-500/20 shadow-xs">
+                <i class="fa-solid fa-shield-halved text-amber-400"></i> 100% Certified & Licensed Commercial Establishment
+            </div>
+            <p class="tracking-widest luxury-font text-[10px] text-zinc-400 mt-1">© 2026 COLA PROFESSIONAL WELLNESS CENTER</p>
+            <p class="font-light text-[9px] text-zinc-500 uppercase tracking-wider">Al Yarmuk, Riyadh, Kingdom of Saudi Arabia</p>
+        </div>
+    </footer>
+
+    <script>
+        // MARKETING BUBBLE TYPEWRITER CONFIGURATION
+        const phrases = [
+            "Need dynamic navigation directions? 📍",
+            "Gusto mo bang magpa-reserve ng slot? 💆‍♂️",
+            "Message our team instantly on WhatsApp! ⚡",
+            "We are open and fully staffed tonight! ✨"
+        ];
+        
+        let phraseIndex = 0;
+        let characterIndex = 0;
+        let isDeleting = false;
+        const bubbleElement = document.getElementById("bubbleTypewriter");
+
+        function loopTypewriter() {
+            const currentPhrase = phrases[phraseIndex];
+
+            if (isDeleting) {
+                bubbleElement.innerHTML = currentPhrase.substring(0, characterIndex - 1);
+                characterIndex--;
+            } else {
+                bubbleElement.innerHTML = currentPhrase.substring(0, characterIndex + 1);
+                characterIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 25 : 50;
+
+            if (!isDeleting && characterIndex === currentPhrase.length) {
+                typeSpeed = 2800; 
+                isDeleting = true;
+            } else if (isDeleting && characterIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length; 
+                typeSpeed = 400; 
+            }
+
+            setTimeout(loopTypewriter, typeSpeed);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loopTypewriter();
+        });
+
+        function toggleChat() {
+            const chatBox = document.getElementById('chatBox');
+            const marketingBubble = document.getElementById('marketingBubble');
+            
+            chatBox.classList.toggle('hidden');
+            
+            if (chatBox.classList.contains('hidden')) {
+                marketingBubble.classList.remove('hidden');
+            } else {
+                marketingBubble.classList.add('hidden');
+                document.getElementById('custCustomMessage').focus();
+            }
+        }
+
+        function startWhatsAppChat() {
+            trackWhatsAppConversion();
+            const customText = document.getElementById('custCustomMessage').value.trim();
+            let message = "Hi Cola Wellness Center, I am checking your map location on your website and I would like to lock in a booking appointment.";
+            
+            if (customText !== "") {
+                message = customText;
+            }
+            
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/966560958973?text=${encodedMessage}`, '_blank');
+        }
+    </script>
+
+</body>
+</html>
